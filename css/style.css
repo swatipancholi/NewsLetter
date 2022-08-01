@@ -214,20 +214,6 @@ aside.right-asidebar{
 	font-family: Roboto;
 	font-size: 14px;
 }
-.calender-widget {
-	border: 1px solid #e5e5e5;
-	width: 100%;
-}
-.calender-widget .calender-top{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 38px;
-	width: 100%;
-}
-.calender-prev, .calender-next{
-	color: #e5e5e5;
-}
 /*===========footer=====*/
 .page-footer{
 	margin: 100px 0 ;

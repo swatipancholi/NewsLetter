@@ -1,0 +1,266 @@
+/*+++++++++++++++++css reset+++++++=*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==============*/
+/*@font-face{
+	src: url('../fonts/Roboto-regular.woff') format('woff'),
+		src: url('../fonts/Roboto-regular.ttf') format('ttf');
+}*/
+body{
+	font-size: 16px;
+	font-family: sans-serif;
+}
+/*=====header=====*/
+.page-header ,.page-footer{
+	height: 97px;
+	width: 100%;
+	background-color: #f7c61d;
+	display: flex;
+
+}
+.wrapper{
+	width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+}
+.page-header .wrapper, .page-footer .wrapper{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+ nav ul{
+	display: flex;
+}
+.page-header nav a{
+	font-family: proxima;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	justify-content: space-between;
+	padding: 0 35px;
+}
+
+
+/*===========
+=========main==========*/
+.main>.wrapper{
+	display: flex;
+}
+main{
+	width: 77%;
+
+}
+.right-sidebar{
+	width: 23%;
+}
+img{
+	width: 100%;
+}
+article{
+	display: flex;
+	margin-bottom: 50px;
+
+}
+h2{
+	font-family: Lucida Sans;
+	font-size: 24px;
+	margin: 40px 0 15px;
+}
+article h3{
+	font-family: proxima;
+	font-weight: 300;
+	font-size: 30px;
+}
+.article-left{
+	width: 30%;
+}
+.article-left img{
+	border-radius: 3px;
+}
+.article-right{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	justify-content: space-between;
+}
+.meta{
+	font-family: roboto;
+	font-weight: 300;
+	color: #999;
+	font-size: 13px;
+}
+.meta span::after{
+	display: inline-block;
+	content: "|";
+	color: #999;
+	font-size: 13px;
+}
+.meta span:last-child::after{
+	display: none;
+}
+.category{
+	color: #e3b002;
+}
+.description{
+	color: #555;
+	font-size: 16px;
+	font-family: roboto;
+}
+.views::after{
+	content: "|";
+	margin: 0 10px;
+}
+.views::before{
+	font-size: 16px;
+}
+.comments{
+	color: #e3b002;
+}
+.comments::before{
+	color: #999;
+}
+.views::before,.comments::after{
+	margin: 10px;
+}
+.additional{
+	color: #999;
+	font-weight: 300;
+}
+.more{
+	width: 170px;
+	height: 42px;
+	background: transparent;
+	color: #000;
+	font-size: 12px;
+	font-family: Roboto;
+	text-transform: uppercase;
+	border: 1px solid #e3b002;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 18px;
+	margin: 0 auto;
+	outline: none;
+	display: block;
+}/*===
+======asie===*/
+aside.right-asidebar{
+	padding-top: 78px;
+	padding-left: 65px;
+}
+.search-box{
+	width: 100%;
+	position: relative;
+
+}
+.search-box label{
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	z-index: 100;
+}
+.search-box input{
+	width: 100%;
+	border-radius: 10px;
+	padding:8px 10px 8px 30px;
+	outline: none;
+	border: 1px solid #e5e5e5;
+	font-family: Roboto;
+	font-size: 14px;
+}
+.calender-widget {
+	border: 1px solid #e5e5e5;
+	width: 100%;
+}
+.calender-widget .calender-top{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 38px;
+	width: 100%;
+}
+.calender-prev, .calender-next{
+	color: #e5e5e5;
+}
+/*===========footer=====*/
+.page-footer{
+	margin: 100px 0 ;
+}
+.page-footer>.wrapper>*{
+	width: 33.33%;
+}
+.copy{
+	font-family: proxima;
+	font-weight: 300;
+	font-size: 13px;
+	color: #a78613;
+}
+.socials{
+	display: flex;
+	justify-content: flex-end;
+}
+.socials a{
+	display: block;
+	width: 45px;
+	height: 45px;
+	background: #fff;
+	border-radius: 50%;
+	color: #f7c61d;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.footer-nav a{
+	text-decoration: none;
+	color: #000;
+	padding: 0 18px;
+}
